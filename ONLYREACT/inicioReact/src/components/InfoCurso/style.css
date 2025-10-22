@@ -1,0 +1,11 @@
+/*src\components\InfoCurso\style.css*/
+
+.TelaCurso {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    background-color: navajowhite;  
+    width: 100vw;
+    height: 100vh;
+}

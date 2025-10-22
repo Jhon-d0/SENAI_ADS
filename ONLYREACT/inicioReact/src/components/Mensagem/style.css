@@ -1,0 +1,10 @@
+/* src\components\Mensagem\stryle.css */
+
+.mensagem {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-color: navajowhite;  
+    width: 100vw;
+    height: 100vh;
+}
