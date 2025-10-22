@@ -1,0 +1,77 @@
+package com.example.RelacionamentoClasses.model;
+
+
+import jakarta.persistence.*;
+
+import java.util.Set;
+import java.util.UUID;
+
+@Entity
+@Table(name = "tab_funcionario")
+public class Funcionario {
+    @Id @GeneratedValue(strategy = GenerationType.UUID)
+    private UUID uuid;
+
+    @Column(nullable = false)
+    private String nome;
+
+    @Column(nullable = false)
+    private String email;
+
+    @Enumerated(EnumType.STRING)
+    private Setor setor;
+
+    @OneToOne(cascade = CascadeType.ALL)
+    private Endereco endereco;
+
+    public Funcionario(){
+    }
+
+    public Funcionario(UUID uuid, String nome, String email, Setor setor, Endereco endereco) {
+        this.uuid = uuid;
+        this.nome = nome;
+        this.email = email;
+        this.setor = setor;
+        this.endereco = endereco;
+    }
+
+    public Setor getSetor() {
+        return setor;
+    }
+
+    public void setSetor(Setor setor) {
+        this.setor = setor;
+    }
+
+    public UUID getUuid() {
+        return uuid;
+    }
+
+    public void setUuid(UUID uuid) {
+        this.uuid = uuid;
+    }
+
+    public String getNome() {
+        return nome;
+    }
+
+    public void setNome(String nome) {
+        this.nome = nome;
+    }
+
+    public String getEmail() {
+        return email;
+    }
+
+    public void setEmail(String email) {
+        this.email = email;
+    }
+
+    public Endereco getEndereco() {
+        return endereco;
+    }
+
+    public void setEndereco(Endereco endereco) {
+        this.endereco = endereco;
+    }
+}
