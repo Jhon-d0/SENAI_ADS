@@ -1,0 +1,43 @@
+package Heranca.atividade3;
+
+public class Medico extends Funcionario{
+    private String crm;
+
+
+    public Medico(String nome, String email, double salario, Endereco endereco, String crm) {
+        super(nome, email, salario, endereco);
+        this.crm = crm;
+    }
+
+    public String getCrm() {
+        return crm;
+    }
+
+    public void setCrm(String crm) {
+        this.crm = crm;
+    }
+
+    @Override
+    public String toString() {
+        return "Medico{" +
+                "crm='" + crm + '\'' +
+                ", nome='" + nome + '\'' +
+                ", email='" + email + '\'' +
+                ", salario=" + salario +
+                ", endereco=" + endereco +
+                '}';
+    }
+
+    public void imprimiMedico(){
+
+        System.out.println("-------Medico---------");
+        System.out.println("Medico{" +
+                "crm='" + crm + '\'' +
+                ", nome='" + nome + '\'' +
+                ", email='" + email + '\'' +
+                ", salario=" + salario +
+                ", endereco=" + endereco +
+                '}');
+
+    }
+}
