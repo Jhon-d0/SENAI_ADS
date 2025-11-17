@@ -1,0 +1,25 @@
+/* Estilos gerais para o Footer */
+.footer {
+    background-color: #333;  /* Cor de fundo escura */
+    color: #fff;  /* Cor do texto */
+    text-align: center;  /* Centraliza o texto */
+    padding: 15px 0;  /* Padding superior e inferior */
+    position: relative;  /* Permite posicionamento fixo ou relativo */
+    bottom: 0;  /* Fica ao fundo da página */
+    width: 100%;  /* Ocupa toda a largura da tela */
+    font-size: 14px;  /* Tamanho de fonte padrão */
+}
+
+/* Estilo para o texto do rodapé */
+.footer p {
+    margin: 0;  /* Remove margens ao redor do parágrafo */
+    font-family: 'Arial', sans-serif;  /* Fonte do texto */
+}
+
+/* Responsividade: Ajuste para dispositivos móveis */
+@media (max-width: 768px) {
+    .footer {
+        padding: 10px 0;  /* Reduz o padding em telas menores */
+        font-size: 12px;  /* Ajusta o tamanho da fonte */
+    }
+}
