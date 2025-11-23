@@ -1,0 +1,61 @@
+/* ----- CONTAINER GERAL ----- */
+.home-container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+
+
+  padding: 20px;
+  width: 100%;
+  background: linear-gradient(135deg, #4b7bec, #3867d6);
+}
+
+/* ----- CARD CENTRAL ----- */
+.home-card {
+  background: #ffffff;
+  padding: 40px 35px;
+  max-width: 500px;
+  width: 100%;
+
+  text-align: center;
+  border-radius: 14px;
+
+  box-shadow: 0 6px 20px rgba(0,0,0,0.15);
+  animation: fadeIn 0.6s ease-out;
+}
+
+/* ----- TÍTULO ----- */
+.home-title {
+  font-size: 2rem;
+  font-weight: 700;
+  color: #222;
+  margin-bottom: 10px;
+}
+
+/* ----- SUBTÍTULO ----- */
+.home-subtitle {
+  font-size: 1.1rem;
+  color: #555;
+}
+
+/* ----- ANIMAÇÃO SUAVE ----- */
+@keyframes fadeIn {
+  from {
+    opacity: 0;
+    transform: translateY(20px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+/* ----- RESPONSIVO ----- */
+@media (max-width: 480px) {
+  .home-card {
+    padding: 30px 20px;
+  }
+  .home-title {
+    font-size: 1.7rem;
+  }
+}

@@ -1,0 +1,77 @@
+/* ----- CONTAINER GERAL ----- */
+.lista-container {
+  max-width: 700px;
+  margin: 40px auto;
+  padding: 25px;
+
+  background: #ffffff;
+  border-radius: 14px;
+  box-shadow: 0 6px 20px rgba(0,0,0,0.12);
+
+  animation: fadeIn 0.6s ease-out;
+}
+
+.lista-container h2 {
+  text-align: center;
+  font-size: 2rem;
+  margin-bottom: 25px;
+  color: #222;
+}
+
+/* ----- LOADING ----- */
+.loading {
+  text-align: center;
+  margin-top: 100px;
+  font-size: 1.5rem;
+  font-weight: bold;
+  color: #4b7bec;
+}
+
+/* ----- SEM USUÁRIO ----- */
+.sem-usuarios {
+  text-align: center;
+  color: #555;
+  font-size: 1.1rem;
+}
+
+/* ----- LISTA ----- */
+.lista-usuarios {
+  list-style: none;
+  padding: 0;
+}
+
+.usuario-item {
+  background: #f7f7f7;
+  padding: 14px 18px;
+  margin-bottom: 12px;
+
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+
+  border-radius: 10px;
+  transition: 0.2s ease;
+  cursor: pointer;
+}
+
+.usuario-item:hover {
+  background: #eaeaea;
+  transform: translateX(4px);
+}
+
+.usuario-item span {
+  font-size: 1.1rem;
+  color: #333;
+}
+
+/* ----- ANIMAÇÃO ----- */
+@keyframes fadeIn {
+  from {
+    opacity: 0;
+    transform: translateY(25px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}

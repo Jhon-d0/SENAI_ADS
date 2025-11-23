@@ -1,0 +1,103 @@
+/* ----- CONTAINER GERAL ----- */
+.cadastro-container {
+  min-width: 450px;
+  background: #ffffff;
+  padding: 30px 25px;
+  border-radius: 12px;
+  box-shadow: 0 4px 18px rgba(0,0,0,0.1);
+  border: 1px solid #eee;
+  display: flex;
+    flex-direction: column;
+    gap: 15px;
+    align-items: center;
+    justify-content: center;
+}
+
+.cadastro-container h2 {
+  text-align: center;
+  margin-bottom: 25px;
+  font-size: 1.7rem;
+  color: #222;
+  font-weight: 600;
+}
+
+form {
+  width: 100%;
+}
+
+/* ----- FORM GROUP ----- */
+.form-group {
+  display: flex;
+  flex-direction: column;
+  margin-bottom: 18px;
+}
+
+.form-group label {
+  font-size: 0.95rem;
+  font-weight: 500;
+  margin-bottom: 6px;
+  color: #333;
+}
+
+.form-group input {
+  padding: 10px 12px;
+  border-radius: 8px;
+  border: 1px solid #ccc;
+  font-size: 1rem;
+  transition: all 0.2s ease;
+  background: #fafafa;
+  width: 100%;
+}
+
+/* FOCUS */
+.form-group input:focus {
+  outline: none;
+  border-color: #4b7bec;
+  box-shadow: 0 0 5px rgba(75,123,236,0.3);
+  background: #fff;
+}
+
+/* ----- MENSAGENS DE ERRO ----- */
+.error-message {
+  margin-top: 5px;
+  font-size: 0.85rem;
+  color: #e74c3c;
+}
+
+/* ----- BOTÃO ----- */
+.btn-cadastrar {
+  width: 100%;
+  padding: 12px;
+  margin-top: 10px;
+
+  background: #4b7bec;
+  color: white;
+  font-size: 1rem;
+  font-weight: 600;
+
+  border: none;
+  border-radius: 8px;
+
+  cursor: pointer;
+  transition: 0.3s ease;
+}
+
+.btn-cadastrar:hover {
+  background: #3867d6;
+}
+
+.btn-cadastrar:disabled {
+  background: #a5b1c2;
+  cursor: not-allowed;
+}
+
+/* ----- RESPONSIVO ----- */
+@media (max-width: 480px) {
+  .cadastro-container {
+    padding: 20px;
+  }
+
+  .cadastro-container h2 {
+    font-size: 1.5rem;
+  }
+}
